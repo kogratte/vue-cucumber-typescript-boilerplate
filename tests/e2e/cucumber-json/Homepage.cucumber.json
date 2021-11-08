@@ -1,0 +1,73 @@
+[
+  {
+    "description": "\t\tA  title should be available",
+    "keyword": "Feature",
+    "name": "Homepage",
+    "line": 1,
+    "id": "homepage",
+    "tags": [],
+    "uri": "Homepage.feature",
+    "elements": [
+      {
+        "id": "homepage;i-open-the-homepage,-and-should-see-a-title",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "I open the homepage, and should see a title",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I should see \"coding-challenge\" as page title",
+            "result": {
+              "status": "passed",
+              "duration": 7000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "homepage;main-title",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Main title",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 10,
+            "name": "I open the homepage",
+            "result": {
+              "status": "passed",
+              "duration": 135000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "the main title should be \"Welcome to Your Vue.js + TypeScript App\"",
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
