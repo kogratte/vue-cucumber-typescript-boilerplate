@@ -6,7 +6,6 @@
     "serve": "vue-cli-service serve",
     "prd": "docker-compose --profile prd up",
     "dev": "docker-compose --profile dev up",
-    "test": "docker-compose --profile test up",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "test:unit:ci": "vue-cli-service test:unit --runInBand --reporters=default --reporters=jest-junit",
