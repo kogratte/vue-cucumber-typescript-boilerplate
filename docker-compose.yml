@@ -6,3 +6,25 @@ services:
     image: niis-prd
     ports:
       - "80:80"
+    profiles:
+      - prd
+
+  local:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: niis-dev
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    profiles:
+      - dev
+
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.test
+    image: niis-tests
+    profiles:
+      - test

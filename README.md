@@ -5,20 +5,26 @@
 
 This boilerplate aims to combine every touchy feature I like to use.
 
+## Prerequisite
+You must have the following elements:
+- Docker
+- Node14.x
+
 ## Project setup
+To run a dev environment, just use the following command:
+
 ```
-npm install
+npm run dev
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Dev environment will be available at localhost:8080, with HMR.
 
 ### Compiles and minifies for production
 ```
-npm run build
+npm run prd
 ```
+
+This will generate a docker image hosting the website. Application will be accessible on port 80.
 
 ### Run your unit tests
 ```
@@ -34,6 +40,3 @@ npm run test:e2e
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
