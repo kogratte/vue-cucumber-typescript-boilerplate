@@ -7,7 +7,7 @@
     "prd": "docker-compose up",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
-    "test:unit:ci": "vue-cli-service test:unit --runInBand",
+    "test:unit:ci": "vue-cli-service test:unit --runInBand --reporters=default --reporters=jest-junit",
     "test:e2e": "vue-cli-service test:e2e",
     "test:e2e:ci": "vue-cli-service test:e2e --headless --url http://127.0.0.1/",
     "lint": "vue-cli-service lint"
@@ -40,6 +40,7 @@
     "eslint": "^6.7.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^6.2.2",
+    "jest-junit": "^13.0.0",
     "typescript": "~4.1.5",
     "vue-template-compiler": "^2.6.11"
   },
@@ -87,5 +88,9 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     }
+  },
+  "jest-junit": {
+    "outputDirectory": "./reports/",
+    "outputName": "unit_tests.xml"
   }
 }

@@ -1,7 +1,10 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> feat(init): add docker for production app & base pipeline
+[![Node.js CI](https://github.com/kogratte/vue-cucumber-typescript-boilerplate/actions/workflows/continuousIntegration.yml/badge.svg)](https://github.com/kogratte/vue-cucumber-typescript-boilerplate/actions/workflows/continuousIntegration.yml)
+
+# VueJS + Typescript + Cucumber boilerplate
+
+This boilerplate aims to combine every touchy feature I like to use.
+
 ## Project setup
 ```
 npm install

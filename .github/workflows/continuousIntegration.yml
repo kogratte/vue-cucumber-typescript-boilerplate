@@ -7,12 +7,11 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
-        node-version: [14.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -20,12 +19,32 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Install and tests
+        run: |
+          npm install
+          npm run test:unit:ci
+      - name: Test Report
+        uses: dorny/test-reporter@v1
+        with:
+          name: JEST Tests
+          path: reports/unit_tests.xml 
+          reporter: jest-junit
 
-      - name: Install dependencies
-        run: npm install
-      - name: Run unit tests
-        run: npm run test:unit:ci
-      - name: Build & run container
-        run: docker-compose up -d
-      - name: Tests e2e
-        run: npm run test:e2e:ci
+      - name: Run e2e tests
+        uses: cypress-io/github-action@v2
+        with:
+          start: docker-compose up -d
+
+      - uses: actions/upload-artifact@v1
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: tests/e2e/screenshots
+      - uses: actions/upload-artifact@v1
+        if: always()
+        with:
+          name: cypress-videos
+          path: tests/e2e/videos      
+
+    
+     
