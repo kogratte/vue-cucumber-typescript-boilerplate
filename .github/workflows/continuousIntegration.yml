@@ -30,7 +30,7 @@ jobs:
           path: reports/unit_tests.xml 
           reporter: jest-junit
       - name: Run docker container
-        run: docket-compose up -d
+        run: docker-compose up -d
       - name: Run e2e tests
         uses: cypress-io/github-action@v2
 
