@@ -1,12 +1,15 @@
 {
-  "name": "coding-challenge",
+  "name": "vue-boilerplate",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "prd": "docker-compose up",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
+    "test:unit:ci": "vue-cli-service test:unit --runInBand",
     "test:e2e": "vue-cli-service test:e2e",
+    "test:e2e:ci": "vue-cli-service test:e2e --headless --url http://127.0.0.1/",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

@@ -23,17 +23,17 @@
             "name": "I open the homepage",
             "result": {
               "status": "passed",
-              "duration": 422000000
+              "duration": 558000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I should see \"coding-challenge\" as page title",
+            "name": "I should see \"Vue Boilerplate\" as page title",
             "result": {
               "status": "passed",
-              "duration": 10000000
+              "duration": 14000000
             }
           }
         ]
@@ -53,7 +53,7 @@
             "name": "I open the homepage",
             "result": {
               "status": "passed",
-              "duration": 151000000
+              "duration": 153000000
             }
           },
           {
@@ -63,7 +63,7 @@
             "name": "the main title should be \"Welcome to Your Vue.js + TypeScript App\"",
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 25000000
             }
           }
         ]

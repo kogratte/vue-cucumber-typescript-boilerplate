@@ -4,7 +4,7 @@ Feature: Homepage
 
 Scenario: I open the homepage, and should see a title
 	Given I open the homepage
-	Then I should see "coding-challenge" as page title
+	Then I should see "Vue Boilerplate" as page title
 
 Scenario: Main title
 	Given I open the homepage

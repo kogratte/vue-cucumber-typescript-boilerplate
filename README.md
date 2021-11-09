@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> feat(init): add docker for production app & base pipeline
 ## Project setup
 ```
 npm install
